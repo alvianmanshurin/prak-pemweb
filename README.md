@@ -1,4 +1,4 @@
-# prak-pemweb
-Tempat pengumpulan tugas praktikum pemrograman web
-Nama  : Alvian Manshurin
+# Prak-pemweb
+Tempat pengumpulan tugas praktikum pemrograman web<br>
+Nama  : Alvian Manshurin<br>
 Nim   : 120140162
