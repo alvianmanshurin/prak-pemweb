@@ -1,0 +1,43 @@
+<!-- Nama   : Alvian Manshurin -->
+<!-- Nim    : 120140162 -->
+<!-- Kelas  : RC -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="assets\img\favicon.png"
+      type="image/x-icon" />
+    <title>Hitung Bilangan Ganjil dan Genap</title>
+</head>
+<body>
+    <h1>Hitung Bilangan Ganjil dan Genap</h1>
+    <p>Masukkan bilangan bulat positif :</p>
+    <input type="number" id="inputNumber">
+    <button onclick="hitungGanjilGenap()">Hitung</button>
+    <p>Hasil :</p>
+    <span id="result"></span>
+
+    <script>
+        function hitungGanjilGenap() {
+            var inputNumber = document.getElementById("inputNumber").value;
+            var jumlahGanjil = 0;
+            var jumlahGenap = 0;
+
+            for (let i = 1; i <= inputNumber; i++) {
+                if (i % 2 === 0) {
+                    jumlahGenap += 1;
+                } else {
+                    jumlahGanjil += 1;
+                }
+            }
+
+            var resultElement = document.getElementById("result");
+            resultElement.textContent = "Jumlah Bilangan Ganjil : " + jumlahGanjil + "\n Jumlah Bilangan Genap : " + jumlahGenap;
+        }
+    </script>
+</body>
+</html>
