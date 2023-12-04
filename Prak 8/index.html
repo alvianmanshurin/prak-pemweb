@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Data Pendaftaran Mahasiswa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Pendaftaran Mahasiswa</h1>
+        <form id="formMahasiswa">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required>
+            
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" required>
+            
+            <button type="button" onclick="tambahData()">Tambah Data</button>
+        </form>
+
+        <table id="tabelMahasiswa">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyMahasiswa"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
